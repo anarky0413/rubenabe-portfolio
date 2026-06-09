@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Footer | RubenAbe Design System</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logos/favicon.svg">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <style>
+    body.subpage-body .subpage-nav.gradient-nav .system-dropdown.btn {
+      background-color: #F5F5F5 !important;
+      color: #503D0D !important;
+      border: 1px solid #F5F5F5 !important;
+      box-shadow: none !important;
+    }
+
+    body.subpage-body .subpage-nav.gradient-nav .system-dropdown.btn:hover,
+    body.subpage-body .subpage-nav.gradient-nav .system-dropdown.btn:focus,
+    body.subpage-body .subpage-nav.gradient-nav .system-dropdown.btn.show {
+      background-color: #503D0D !important;
+      color: #E7E1BF !important;
+      border-color: #503D0D !important;
+      box-shadow: none !important;
+    }
+
+    body.subpage-body .subpage-nav.gradient-nav .system-dropdown.btn::after {
+      color: inherit !important;
+    }
+
+    .footer-system-wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      gap: 28px;
+    }
+
+    .footer-page-intro {
+      max-width: 760px;
+      margin: -10px auto 42px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.65;
+      color: var(--text);
+    }
+
+    .footer-doc-card,
+    .accessibility-card {
+      background: #fff;
+      border: 1px solid rgba(80, 61, 13, 0.18);
+      border-radius: 20px;
+      padding: 34px;
+      box-shadow: 0 18px 42px rgba(0, 0, 0, 0.08);
+    }
+
+    .footer-doc-card {
+      display: grid;
+      gap: 30px;
+    }
+
+    .mini-label {
+      margin: 0 0 8px;
+      color: var(--brown);
+      font-size: 0.9rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .footer-copy h2,
+    .accessibility-card h2 {
+      margin: 0 0 10px;
+      font-size: clamp(1.9rem, 3vw, 2.7rem);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      color: var(--text);
+    }
+
+    .footer-copy p,
+    .accessibility-card p:last-child {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--text);
+    }
+
+    .portfolio-footer-demo {
+      width: 100%;
+      min-height: 150px;
+      padding: 24px 34px;
+      border-radius: 18px;
+      background: linear-gradient(90deg, #2a1700 0%, #8e3f40 54%, #ffd86f 100%);
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 28px;
+      box-shadow: 0 18px 42px rgba(0, 0, 0, 0.12);
+    }
+
+    .portfolio-footer-logo {
+      justify-self: start;
+      display: flex;
+      align-items: center;
+    }
+
+    .portfolio-footer-logo img {
+      width: 104px;
+      height: auto;
+      display: block;
+    }
+
+    .portfolio-footer-copy {
+      justify-self: center;
+      margin: 0;
+      color: var(--cream);
+      font-size: 16px;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .portfolio-footer-contact {
+      justify-self: end;
+      text-align: right;
+    }
+
+    .portfolio-footer-contact h3 {
+      margin: 0 0 10px;
+      color: var(--brown);
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .portfolio-footer-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 6px;
+    }
+
+    .portfolio-footer-links a {
+      color: var(--brown);
+      font-size: 15px;
+      font-weight: 900;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .portfolio-footer-links a:hover,
+    .portfolio-footer-links a:focus {
+      color: var(--cream);
+    }
+
+    .button-code-stack {
+      display: grid;
+      gap: 18px;
+    }
+
+    .code-block h3 {
+      margin: 0 0 10px;
+      font-size: 0.9rem;
+      font-weight: 900;
+      color: var(--brown);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    pre {
+      margin: 0;
+      padding: 18px;
+      background: #1e1e1e;
+      color: #f5f5f5;
+      border-radius: 14px;
+      overflow-x: auto;
+      font-size: 0.86rem;
+      line-height: 1.55;
+    }
+
+    .accessibility-section {
+      padding-top: 0;
+    }
+
+    .accessibility-card {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .accessibility-card p:last-child {
+      max-width: 820px;
+    }
+
+    @media (max-width: 760px) {
+      .footer-doc-card,
+      .accessibility-card {
+        padding: 24px;
+      }
+
+      .portfolio-footer-demo {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        padding: 26px 22px;
+      }
+
+      .portfolio-footer-logo,
+      .portfolio-footer-copy,
+      .portfolio-footer-contact {
+        justify-self: center;
+        text-align: center;
+      }
+
+      .portfolio-footer-logo img {
+        width: 96px;
+      }
+
+      .portfolio-footer-contact h3,
+      .portfolio-footer-links a {
+        color: var(--cream);
+      }
+    }
+  </style>
+</head>
+
+<body class="subpage-body">
+
+  <nav class="subpage-nav gradient-nav">
+    <a href="../index.html" class="subpage-brand">
+      <img src="../assets/images/logos/logo-lockup-cream.svg" alt="RubenAbe logo">
+    </a>
+
+    <button class="subpage-menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <div class="subpage-nav-links" id="subpageNavLinks">
+      <div class="dropdown">
+        <button class="btn system-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Foundations
+        </button>
+        <ul class="dropdown-menu system-menu">
+          <li><a class="dropdown-item" href="../foundations/logo.html">Logo</a></li>
+          <li><a class="dropdown-item" href="../foundations/color.html">Colors</a></li>
+          <li><a class="dropdown-item" href="../foundations/typography.html">Typography</a></li>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <button class="btn system-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Components
+        </button>
+        <ul class="dropdown-menu system-menu">
+          <li><a class="dropdown-item" href="buttons.html">Buttons</a></li>
+          <li><a class="dropdown-item" href="cards.html">Cards</a></li>
+          <li><a class="dropdown-item" href="navigation.html">Navigation</a></li>
+          <li><a class="dropdown-item active" href="footer.html">Footer</a></li>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <button class="btn system-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Page Patterns
+        </button>
+        <ul class="dropdown-menu system-menu">
+          <li><a class="dropdown-item" href="../patterns/homepage.html">Homepage</a></li>
+          <li><a class="dropdown-item" href="../patterns/project-detail.html">Project Detail</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="subpage-hero centered-hero">
+    <p class="eyebrow">Components</p>
+    <h1>Footer</h1>
+  </header>
+
+  <main>
+    <section class="content-section">
+      <p class="footer-page-intro">
+        The footer closes each portfolio page with a logo mark, copyright line, and contact links for resume and social platforms.
+      </p>
+
+      <div class="footer-system-wrap">
+        <article class="footer-doc-card">
+          <div class="footer-copy">
+            <p class="mini-label">Portfolio footer</p>
+            <h2>Contact and copyright footer</h2>
+            <p>
+              This footer pattern uses the same gradient surface as the design system footer, while adapting the content for a personal portfolio.
+            </p>
+          </div>
+
+          <footer class="portfolio-footer-demo">
+            <a class="portfolio-footer-logo" href="#">
+              <img src="../assets/images/logos/logo-mark-cream.svg" alt="RubenAbe logo mark">
+            </a>
+
+            <p class="portfolio-footer-copy">© Ruben Abraham 2026</p>
+
+            <div class="portfolio-footer-contact">
+              <h3>Contact</h3>
+              <ul class="portfolio-footer-links">
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">ArtStation</a></li>
+              </ul>
+            </div>
+          </footer>
+
+          <div class="button-code-stack">
+            <div class="code-block">
+              <h3>Footer HTML</h3>
+              <pre><code>&lt;footer class="portfolio-footer-demo"&gt;
+  &lt;a class="portfolio-footer-logo" href="#"&gt;
+    &lt;img src="assets/images/logos/logo-mark-cream.svg" alt="RubenAbe logo mark"&gt;
+  &lt;/a&gt;
+
+  &lt;p class="portfolio-footer-copy"&gt;© Ruben Abraham 2026&lt;/p&gt;
+
+  &lt;div class="portfolio-footer-contact"&gt;
+    &lt;h3&gt;Contact&lt;/h3&gt;
+    &lt;ul class="portfolio-footer-links"&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Resume&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Instagram&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;ArtStation&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;</code></pre>
+            </div>
+
+            <div class="code-block">
+              <h3>Footer CSS</h3>
+              <pre><code>.portfolio-footer-demo {
+  min-height: 150px;
+  padding: 24px 34px;
+  border-radius: 18px;
+  background: linear-gradient(90deg, #2a1700 0%, #8e3f40 54%, #ffd86f 100%);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 28px;
+}
+
+.portfolio-footer-logo {
+  justify-self: start;
+}
+
+.portfolio-footer-logo img {
+  width: 104px;
+}
+
+.portfolio-footer-copy {
+  justify-self: center;
+  color: var(--cream);
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.portfolio-footer-contact {
+  justify-self: end;
+  text-align: right;
+}
+
+.portfolio-footer-links a {
+  color: var(--brown);
+  font-size: 15px;
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}</code></pre>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section accessibility-section">
+      <div class="accessibility-card">
+        <p class="mini-label">Accessibility considerations</p>
+        <h2>Footer accessibility</h2>
+        <p>
+          The footer uses semantic HTML, readable link labels, clear contrast, and keyboard accessible links. The logo includes descriptive alt text, and the contact links remain visible across desktop, tablet, and mobile layouts.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-left">frubhena@depaul.edu</p>
+    <img src="../assets/images/logos/logo-mark-cream.svg" alt="RubenAbe logo mark">
+    <p class="footer-right">HCI 472 · June 2026</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const subpageToggle = document.querySelector('.subpage-menu-toggle');
+    const subpageNavLinks = document.querySelector('#subpageNavLinks');
+
+    if (subpageToggle && subpageNavLinks) {
+      subpageToggle.addEventListener('click', () => {
+        subpageNavLinks.classList.toggle('open');
+        const expanded = subpageToggle.getAttribute('aria-expanded') === 'true';
+        subpageToggle.setAttribute('aria-expanded', !expanded);
+      });
+    }
+  </script>
+</body>
+</html>
