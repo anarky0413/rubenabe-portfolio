@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Help Desk Redesign | Ruben Abraham Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logos/favicon.svg">
+</head>
+
+<body class="project-page helpdesk-page">
+
+  <nav class="top-nav project-nav">
+    <a href="../index.html" class="brand">
+      <img src="../assets/images/logos/logo-lockup-cream.png" alt="RubenAbe logo">
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <div class="nav-links" id="homeNavLinks">
+      <a class="nav-main-link" href="../index.html">Home</a>
+
+      <div class="dropdown nav-group">
+        <button class="btn nav-main-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Works
+        </button>
+
+        <ul class="dropdown-menu portfolio-menu">
+          <li><span class="dropdown-header portfolio-menu-label">Product / Interface Design</span></li>
+          <li><a class="dropdown-item" href="qcook.html">QCook</a></li>
+          <li><a class="dropdown-item active" href="help-desk-redesign.html">Help Desk Redesign</a></li>
+          <li><a class="dropdown-item" href="design-system.html">RubenAbe Design System</a></li>
+
+          <li><hr class="dropdown-divider"></li>
+
+          <li><span class="dropdown-header portfolio-menu-label">UX Research / Evaluation</span></li>
+          <li><a class="dropdown-item" href="mca-ia-redesign.html">MCA Chicago IA Redesign</a></li>
+          <li><a class="dropdown-item" href="chicago-gov-usability.html">Chicago.gov Usability Evaluation</a></li>
+          <li><a class="dropdown-item" href="food-consumption-study.html">Food Consumption Study</a></li>
+
+          <li><hr class="dropdown-divider"></li>
+
+          <li><span class="dropdown-header portfolio-menu-label">Website / Client Work</span></li>
+          <li><a class="dropdown-item" href="circuit-engineering-audit.html">Circuit Engineering Audit</a></li>
+          <li><a class="dropdown-item" href="global-link-hr.html">Global Link HR Website</a></li>
+        </ul>
+      </div>
+
+      <div class="dropdown nav-group">
+        <button class="btn nav-main-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Artworks
+        </button>
+
+        <ul class="dropdown-menu portfolio-menu year-menu">
+          <li><span class="dropdown-header portfolio-menu-label">By Year</span></li>
+          <li><a class="dropdown-item" href="../artworks/2026.html">2026</a></li>
+          <li><a class="dropdown-item" href="../artworks/2025.html">2025</a></li>
+          <li><a class="dropdown-item" href="../artworks/2024.html">2024</a></li>
+          <li><a class="dropdown-item" href="../artworks/2023.html">2023</a></li>
+        </ul>
+      </div>
+
+      <a class="nav-main-link" href="../resume.html">Resume</a>
+    </div>
+  </nav>
+
+  <main class="helpdesk-case">
+
+    <section class="helpdesk-hero">
+      <div class="case-container helpdesk-hero-intro">
+        <p class="case-kicker">UX Research · Interface Redesign</p>
+
+        <h1>Clearing the Queue:</h1>
+        <h1>A Help Desk Redesign</h1>
+
+
+        <p class="case-lead">
+          A user-centered redesign for managing student support requests at the DePaul Library help desk.
+          The project focused on reducing staff stress, improving task clarity, and making daily support work easier to manage.
+        </p>
+
+        <div class="case-hero-actions">
+          <a class="case-btn-primary" href="../assets/files/help-desk-redesign.pdf" target="_blank" rel="noopener">
+            View Presentation
+          </a>
+
+          <a class="case-btn-link" href="#research">
+            See Research Process
+          </a>
+        </div>
+      </div>
+
+      <div class="helpdesk-hero-visual">
+        <div class="helpdesk-visual-card">
+          <p>Smart Task Queue</p>
+          <h2>Help desk staff need faster ways to track, prioritize, and resolve student requests.</h2>
+
+          <div class="queue-preview">
+            <span class="queue-item urgent">High Priority</span>
+            <span class="queue-item medium">Room Booking</span>
+            <span class="queue-item normal">Tech Checkout</span>
+            <span class="queue-item support">Research Help</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section snapshot-section">
+      <div class="case-container">
+        <div class="snapshot-grid">
+          <article class="snapshot-card">
+            <p>Role</p>
+            <h2>UX research, interface design, usability testing</h2>
+          </article>
+
+          <article class="snapshot-card">
+            <p>Project Type</p>
+            <h2>Help desk workflow redesign</h2>
+          </article>
+
+          <article class="snapshot-card">
+            <p>Methods</p>
+            <h2>Interviews, contextual inquiry, personas, testing</h2>
+          </article>
+
+          <article class="snapshot-card">
+            <p>Focus</p>
+            <h2>Task clarity, prioritization, staff support</h2>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-container case-box overview-box">
+        <p class="case-kicker">Overview</p>
+
+        <h2>Helping library staff manage support work with less friction.</h2>
+
+        <div class="overview-copy">
+          <p>
+            DePaul library help desk staff handle overlapping student requests, technical questions,
+            room bookings, and walk-in support. Without a clear system to track or prioritize requests,
+            staff can lose context, repeat work, or feel overloaded during busy periods.
+          </p>
+
+          <p>
+            The redesign creates a lightweight internal tool for monitoring active tasks, checking quick help resources,
+            viewing student request history, and adjusting dashboard information around each staff member’s workflow.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" id="research">
+      <div class="case-container">
+        <p class="case-kicker">Research</p>
+
+        <h2 class="section-heading">
+          We studied the daily workflow of DePaul library help desk staff.
+        </h2>
+
+        <div class="helpdesk-research-grid">
+          <article class="helpdesk-info-card">
+            <p class="mini-label">What we did</p>
+            <h3>Interviewed 9 library staff</h3>
+            <p>
+              We gathered feedback from Access and Research Help desk staff to understand day-to-day support needs,
+              pain points, and workflow breakdowns.
+            </p>
+          </article>
+
+          <article class="helpdesk-info-card">
+            <p class="mini-label">What we noticed</p>
+            <h3>Memory carried too much of the workflow</h3>
+            <p>
+              Staff relied on sticky notes, verbal updates, and personal memory because there was no centralized way
+              to manage multiple active requests.
+            </p>
+          </article>
+
+          <article class="helpdesk-info-card">
+            <p class="mini-label">Why it mattered</p>
+            <h3>Task overlap created stress</h3>
+            <p>
+              Overlapping responsibilities caused confusion, delays, and extra pressure, especially for new staff still learning the desk workflow.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-container case-box">
+        <p class="case-kicker">Problem Space</p>
+
+        <div class="helpdesk-problem-layout">
+          <div>
+            <h2 class="case-section-title">The help desk needed a clearer support flow.</h2>
+          </div>
+
+          <div class="problem-list">
+            <article>
+              <span>01</span>
+              <p>Staff juggle tech issues, room bookings, online chats, reference questions, and walk-in requests.</p>
+            </article>
+
+            <article>
+              <span>02</span>
+              <p>There was no clear way to track, prioritize, or hand off multiple student requests.</p>
+            </article>
+
+            <article>
+              <span>03</span>
+              <p>New staff needed fast access to routine help steps without depending on supervisors for every small task.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-container">
+        <p class="case-kicker">Personas</p>
+
+        <h2 class="section-heading">
+          Three staff profiles shaped the redesign.
+        </h2>
+
+        <div class="persona-grid">
+          <article class="persona-card">
+            <p class="mini-label">Senior Staff</p>
+            <h3>Dana Mitchell</h3>
+            <p>
+              Experienced and proactive, but often struggles to track multiple student requests while helping others.
+            </p>
+          </article>
+
+          <article class="persona-card">
+            <p class="mini-label">Mid-Level Staff</p>
+            <h3>Alex Torres</h3>
+            <p>
+              Handles physical desk duties and urgent requests, needing a clear view of student needs and task priorities.
+            </p>
+          </article>
+
+          <article class="persona-card">
+            <p class="mini-label">New Hire</p>
+            <h3>Jamie Patel</h3>
+            <p>
+              Still learning the system and needs quick access to support resources without constantly asking others.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-container">
+        <p class="case-kicker">Design Direction</p>
+
+        <h2 class="section-heading">
+          The redesign focused on four support features.
+        </h2>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span>01</span>
+            <h3>Smart Task Queue</h3>
+            <p>Prioritizes student requests by urgency, wait time, and request type.</p>
+          </article>
+
+          <article class="feature-card">
+            <span>02</span>
+            <h3>Quick Help Panel</h3>
+            <p>Gives new staff searchable support steps for common library tasks.</p>
+          </article>
+
+          <article class="feature-card">
+            <span>03</span>
+            <h3>Student Request History</h3>
+            <p>Shows past issues so staff can provide faster and more personalized support.</p>
+          </article>
+
+          <article class="feature-card">
+            <span>04</span>
+            <h3>Customizable Dashboard</h3>
+            <p>Lets staff adjust layout and notifications around their daily workflow.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-container case-box">
+        <div class="component-detail-layout helpdesk-flow-layout">
+
+          <div class="component-detail-copy">
+            <p class="case-kicker">Interface Concept</p>
+
+            <h2>A dashboard that makes task status visible at a glance.</h2>
+
+            <p>
+              The proposed system centers on an active queue where staff can see request type, wait time, urgency,
+              student context, and task status without switching between scattered notes or verbal updates.
+            </p>
+
+            <p>
+              The main interaction goal was to support quick decision-making during busy periods while still giving new staff
+              guidance through the Quick Help panel.
+            </p>
+          </div>
+
+          <div class="helpdesk-ui-panel">
+            <div class="ui-sidebar">
+              <span></span>
+              <p>Dashboard</p>
+              <p>Active Tasks</p>
+              <p>Quick Help</p>
+            </div>
+
+            <div class="ui-main">
+              <h3>Active Tasks</h3>
+
+              <div class="ui-task high">
+                <strong>Research Help</strong>
+                <span>High Priority</span>
+              </div>
+
+              <div class="ui-task medium">
+                <strong>Room Booking</strong>
+                <span>Medium</span>
+              </div>
+
+              <div class="ui-task low">
+                <strong>Tech Checkout</strong>
+                <span>Routine</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-container">
+        <p class="case-kicker">Scenarios</p>
+
+        <h2 class="section-heading">
+          We tested the concept through staff-centered task scenarios.
+        </h2>
+
+        <div class="scenario-grid">
+          <article class="scenario-card">
+            <p class="mini-label">Dana</p>
+            <h3>Handling research support while monitoring new requests</h3>
+            <p>
+              Dana checks a new online help request, sees the priority, reviews the student’s previous queries,
+              replies through chat, and marks the task complete.
+            </p>
+          </article>
+
+          <article class="scenario-card">
+            <p class="mini-label">Alex</p>
+            <h3>Managing a busy afternoon queue</h3>
+            <p>
+              Alex opens the dashboard, reviews the color-coded queue, selects the most urgent task,
+              and updates the status after helping the student.
+            </p>
+          </article>
+
+          <article class="scenario-card">
+            <p class="mini-label">Jamie</p>
+            <h3>Using quick help instead of asking a supervisor</h3>
+            <p>
+              Jamie searches the Quick Help panel for “Tech Checkout” and follows the steps without interrupting another staff member.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-container case-box">
+        <p class="case-kicker">Usability Testing</p>
+
+        <h2 class="case-section-title">Testing showed where the interface needed to become simpler.</h2>
+
+        <div class="testing-grid">
+          <article>
+            <p class="mini-label">What we tested</p>
+            <ul>
+              <li>Can users complete tasks without confusion?</li>
+              <li>Do users understand the task queue and help panel?</li>
+              <li>Are feedback and error messages clear?</li>
+            </ul>
+          </article>
+
+          <article>
+            <p class="mini-label">Participant reactions</p>
+            <blockquote>“Can’t get easier than this.”</blockquote>
+            <blockquote>“I had to guess too much. During hectic times, I’d want things simpler.”</blockquote>
+            <blockquote>“Color coding is very helpful in identifying.”</blockquote>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-container">
+        <p class="case-kicker">Design Updates</p>
+
+        <h2 class="section-heading">
+          The final updates focused on clearer labels, less clutter, and better guidance.
+        </h2>
+
+        <div class="update-grid">
+          <article class="update-card">
+            <p class="mini-label">Button Labels</p>
+            <h3>Make actions more direct</h3>
+            <p>Reword vague labels like “Take Next” into clearer options such as “Start Task.”</p>
+          </article>
+
+          <article class="update-card">
+            <p class="mini-label">Queue View</p>
+            <h3>Reduce visual overload</h3>
+            <p>Simplify the task queue by grouping requests and reducing visible controls upfront.</p>
+          </article>
+
+          <article class="update-card">
+            <p class="mini-label">Micro-Guidance</p>
+            <h3>Support new staff faster</h3>
+            <p>Explore expandable help tools or chatbot-style guidance for routine questions.</p>
+          </article>
+
+          <article class="update-card">
+            <p class="mini-label">Feedback</p>
+            <h3>Show clearer status cues</h3>
+            <p>Add confirmations and next-step guidance so staff know when a task has moved forward.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+   <section class="case-section">
+  <div class="case-container case-box overview-box">
+    <p class="case-kicker">Outcome</p>
+
+    <h2>Clearer task flow, faster support access, and less reliance on memory.</h2>
+
+    <div class="overview-copy">
+      <p>
+        The redesign clarified how help desk staff could track active requests, prioritize urgent student needs,
+        and access quick support steps without relying on sticky notes, verbal updates, or memory.
+      </p>
+    </div>
+
+    <div class="stats-grid helpdesk-outcome-grid">
+      <div class="stat-card">
+        <span class="stat-number">01</span>
+        <span class="stat-label">Clearer task priority</span>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-number">02</span>
+        <span class="stat-label">Faster access to routine help</span>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-number">03</span>
+        <span class="stat-label">Less reliance on verbal handoffs</span>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-number">04</span>
+        <span class="stat-label">Better support for new staff</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section case-section-last">
+  <div class="case-container case-box">
+    <div class="reflection-block">
+      <p class="case-kicker">Reflection</p>
+
+      <h2>Designing for staff meant designing for pressure, not just tasks.</h2>
+
+      <p>
+        This project showed how small workflow gaps can create real stress in service environments.
+        The design was not just about adding a dashboard, but about making priorities, next steps,
+        and support resources easier to understand during busy desk conditions.
+      </p>
+
+      <p>
+        My main contribution was connecting the research findings to workflow features, including the task queue,
+        quick help panel, student request history, and usability testing updates.
+      </p>
+
+      <p>
+        If I continued this project, I would refine the interface with a stronger visual system,
+        test the revised task labels again, and explore how the quick help feature could support onboarding for new staff.
+      </p>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="portfolio-footer">
+    <div class="footer-brand">
+      <img src="../assets/images/logos/logo-mark-cream.svg" alt="RubenAbe logo mark">
+    </div>
+
+    <p class="footer-copy">© Ruben Abraham 2026</p>
+
+    <div class="footer-links">
+      <a href="mailto:frubhena@depaul.edu">Contact (Email)</a>
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="https://www.artstation.com/rubhenabraham" target="_blank">ArtStation</a>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const homeToggle = document.querySelector('.menu-toggle');
+  const homeNavLinks = document.querySelector('#homeNavLinks');
+
+  if (homeToggle && homeNavLinks) {
+    homeToggle.addEventListener('click', () => {
+      homeNavLinks.classList.toggle('open');
+      const expanded = homeToggle.getAttribute('aria-expanded') === 'true';
+      homeToggle.setAttribute('aria-expanded', !expanded);
+    });
+  }
+</script>
+</body>
+</html>
