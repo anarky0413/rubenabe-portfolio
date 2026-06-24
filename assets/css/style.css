@@ -4399,3 +4399,83 @@ a {
     margin-bottom: 26px !important;
   }
 }
+/* =========================================
+   SUBPAGE FLOATING NAVBAR POSITION TEST
+   No scroll-hide yet
+   Does not affect homepage
+========================================= */
+
+body.project-page {
+  padding-top: 76px !important;
+}
+
+body.project-page .project-nav {
+  position: fixed !important;
+  top: 2px !important;
+  left: 14px !important;
+  right: 14px !important;
+  width: auto !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  transform: translateY(0) !important;
+  z-index: 99999 !important;
+  transition: transform 0.28s ease, opacity 0.28s ease !important;
+}
+
+body.project-page .project-nav.nav-hidden {
+  transform: translateY(-140%) !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+html {
+  scroll-padding-top: 110px !important;
+}
+
+@media (max-width: 1024px) {
+  body.project-page {
+    padding-top: 74px !important;
+  }
+
+  body.project-page .project-nav {
+    top: 2px !important;
+    left: 12px !important;
+    right: 12px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  body.project-page {
+    padding-top: 72px !important;
+  }
+
+  body.project-page .project-nav {
+    top: 2px !important;
+    left: 10px !important;
+    right: 10px !important;
+  }
+
+  body.project-page .menu-toggle,
+  body.project-page button.menu-toggle {
+    color: #503D0D !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  body.project-page .menu-toggle:hover,
+  body.project-page .menu-toggle:focus,
+  body.project-page .menu-toggle[aria-expanded="true"],
+  body.project-page button.menu-toggle:hover,
+  body.project-page button.menu-toggle:focus,
+  body.project-page button.menu-toggle[aria-expanded="true"] {
+    color: #503D0D !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
