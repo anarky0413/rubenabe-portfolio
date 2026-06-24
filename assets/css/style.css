@@ -4479,3 +4479,22 @@ html {
     box-shadow: none !important;
   }
 }
+/* Homepage hero final polish */
+.hero-text {
+  max-width: 660px !important;
+  margin-top: 22px !important;
+  font-size: clamp(17px, 1.15vw, 20px) !important;
+  line-height: 1.65 !important;
+}
+/* Homepage name size override */
+.home-page .hero-name,
+.hero-name {
+  font-size: clamp(78px, 10vw, 160px) !important;
+  line-height: 0.86 !important;
+  letter-spacing: -0.075em !important;
+  font-weight: 900 !important;
+
+  max-width: none !important;
+  width: max-content !important;
+  white-space: nowrap !important;
+}
