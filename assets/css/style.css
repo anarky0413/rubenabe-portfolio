@@ -4545,3 +4545,575 @@ html {
     overflow: hidden !important;
   }
 }
+/* =========================================
+   ARTWORK PAGES FINAL CLEAN VERSION
+   No extra gallery heading, cleaner cards
+========================================= */
+
+.artwork-page {
+  background: #ededeb !important;
+  color: #222222 !important;
+}
+
+.artwork-main {
+  background: #ededeb !important;
+}
+
+/* HERO */
+
+.artwork-hero-clean {
+  position: relative !important;
+  overflow: hidden !important;
+  padding: 54px 0 42px !important;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(231, 225, 191, 0.44), transparent 30%),
+    radial-gradient(circle at 82% 18%, rgba(146, 57, 60, 0.10), transparent 28%),
+    #ededeb !important;
+}
+
+.artwork-hero-clean::before {
+  content: none !important;
+  display: none !important;
+}
+
+.artwork-hero-clean-inner {
+  max-width: 980px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.artwork-hero-clean .case-kicker {
+  margin-bottom: 14px !important;
+  color: #503D0D !important;
+}
+
+.artwork-hero-clean h1 {
+  max-width: 900px !important;
+  margin: 0 auto 22px !important;
+  color: #2e2e32 !important;
+  font-size: clamp(48px, 7vw, 88px) !important;
+  line-height: 0.95 !important;
+  letter-spacing: -0.065em !important;
+  font-weight: 900 !important;
+  text-align: center !important;
+}
+
+.artwork-intro-copy-clean {
+  max-width: 860px !important;
+  margin: 0 auto !important;
+  display: grid !important;
+  gap: 14px !important;
+  text-align: center !important;
+}
+
+.artwork-intro-copy-clean p {
+  margin: 0 auto !important;
+  color: #2f2f35 !important;
+  font-size: 18px !important;
+  line-height: 1.7 !important;
+  font-weight: 400 !important;
+}
+
+.artwork-intro-copy-clean .artwork-progress-note {
+  color: #503D0D !important;
+  font-weight: 800 !important;
+}
+
+/* GALLERY */
+
+.artwork-gallery-clean {
+  padding: 52px 0 88px !important;
+  background: #ededeb !important;
+}
+
+.artwork-flex-gallery {
+  max-width: 1120px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  gap: 34px !important;
+}
+
+/* CARD SHELL */
+
+.artwork-card-clean {
+  position: relative !important;
+  overflow: visible !important;
+  color: var(--text) !important;
+  border-radius: 12px 12px 0 0 !important;
+  background: linear-gradient(180deg, #c7a09a 0%, #ffe4a8 42%, #fff7df 66%, #fbfaf4 82%, var(--bg) 100%) !important;
+  border-top: 1px solid rgba(80, 61, 13, 0.2) !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+}
+
+.artwork-card-clean::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 88% !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+  border-left: 1px solid rgba(80, 61, 13, 0.2) !important;
+  border-right: 1px solid rgba(80, 61, 13, 0.2) !important;
+  border-radius: 12px 12px 0 0 !important;
+  box-shadow:
+    inset 0 18px 18px rgba(80, 61, 13, 0.34),
+    inset 14px 0 20px rgba(80, 61, 13, 0.13),
+    inset -14px 0 20px rgba(80, 61, 13, 0.13) !important;
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 58%, rgba(0, 0, 0, 0.65) 78%, transparent 100%) !important;
+  mask-image: linear-gradient(180deg, #000 0%, #000 58%, rgba(0, 0, 0, 0.65) 78%, transparent 100%) !important;
+}
+
+.artwork-card-portrait {
+  width: min(100%, 370px) !important;
+}
+
+.artwork-card-wide {
+  width: min(100%, 460px) !important;
+}
+
+.artwork-card-coming-clean {
+  width: min(100%, 330px) !important;
+}
+
+/* IMAGE AREA */
+
+.artwork-image-button-clean,
+.artwork-card-body-clean,
+.artwork-coming-visual-clean {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.artwork-image-button-clean {
+  display: block !important;
+  width: calc(100% - 48px) !important;
+  margin: 24px 24px 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  background: transparent !important;
+  cursor: zoom-in !important;
+}
+
+/* This is the important part:
+   Image lifts from the card and shadow appears behind it */
+.artwork-image-button-clean img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: 560px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  border-radius: 8px !important;
+  transform: translateY(0) scale(1) !important;
+  transform-origin: center center !important;
+  box-shadow: none !important;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease !important;
+}
+
+.artwork-card-clean:hover .artwork-image-button-clean img,
+.artwork-card-clean:focus-within .artwork-image-button-clean img {
+  transform: translateY(-7px) scale(1.035) !important;
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.18) !important;
+}
+
+/* CARD TEXT */
+
+.artwork-card-body-clean {
+  padding: 20px 24px 32px !important;
+}
+
+.artwork-card-meta {
+  margin: 0 0 10px !important;
+  color: var(--brown) !important;
+  font-size: 12px !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+.artwork-card-body-clean h3 {
+  margin: 0 !important;
+  color: #2e2e32 !important;
+  font-size: clamp(26px, 2.4vw, 36px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.045em !important;
+  font-weight: 900 !important;
+}
+
+/* COMING SOON */
+
+.artwork-coming-visual-clean {
+  width: calc(100% - 48px) !important;
+  min-height: 300px !important;
+  margin: 24px 24px 0 !important;
+  border-radius: 8px !important;
+  border: 2px dashed rgba(80, 61, 13, 0.28) !important;
+  background:
+    radial-gradient(circle at 26% 20%, rgba(231, 225, 191, 0.88), transparent 36%),
+    linear-gradient(135deg, rgba(245, 245, 245, 0.72), rgba(231, 225, 191, 0.58)) !important;
+  display: grid !important;
+  place-items: center !important;
+}
+
+.artwork-coming-visual-clean span {
+  color: var(--brown) !important;
+  font-size: 13px !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+}
+
+/* LIGHTBOX */
+
+body.lightbox-open {
+  overflow: hidden !important;
+}
+
+.artwork-lightbox {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 999999 !important;
+  display: none !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 42px !important;
+  background: rgba(20, 16, 8, 0.88) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.artwork-lightbox.open {
+  display: flex !important;
+}
+
+.artwork-lightbox-inner {
+  width: min(90vw, 1280px) !important;
+  max-height: 90vh !important;
+  text-align: center !important;
+}
+
+.artwork-lightbox-inner img {
+  max-width: 100% !important;
+  max-height: 82vh !important;
+  object-fit: contain !important;
+  border-radius: 18px !important;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.46) !important;
+}
+
+.artwork-lightbox-inner p {
+  margin: 18px 0 0 !important;
+  color: #F5F5F5 !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+}
+
+.artwork-lightbox-close {
+  position: fixed !important;
+  top: 24px !important;
+  right: 28px !important;
+  width: 54px !important;
+  height: 54px !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: #F5F5F5 !important;
+  color: #503D0D !important;
+  font-size: 38px !important;
+  line-height: 1 !important;
+  cursor: pointer !important;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1080px) {
+  .artwork-hero-clean {
+    padding: 46px 0 46px !important;
+  }
+
+  .artwork-flex-gallery {
+    gap: 30px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .artwork-hero-clean {
+    padding: 38px 0 40px !important;
+  }
+
+  .artwork-hero-clean h1 {
+    font-size: clamp(42px, 13vw, 64px) !important;
+    line-height: 0.95 !important;
+    letter-spacing: -0.06em !important;
+  }
+
+  .artwork-intro-copy-clean {
+    max-width: 88vw !important;
+    gap: 14px !important;
+  }
+
+  .artwork-intro-copy-clean p {
+    font-size: 16px !important;
+    line-height: 1.65 !important;
+  }
+
+  .artwork-gallery-clean {
+    padding: 38px 0 72px !important;
+  }
+
+  .artwork-flex-gallery {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  .artwork-card-clean,
+  .artwork-card-portrait,
+  .artwork-card-wide,
+  .artwork-card-coming-clean {
+    width: 100% !important;
+  }
+
+  .artwork-image-button-clean,
+  .artwork-coming-visual-clean {
+    width: calc(100% - 36px) !important;
+    margin: 18px 18px 0 !important;
+  }
+
+  .artwork-image-button-clean img {
+    max-height: none !important;
+  }
+
+  .artwork-coming-visual-clean {
+    min-height: 260px !important;
+  }
+
+  .artwork-card-body-clean {
+    padding: 20px 22px 30px !important;
+  }
+
+  .artwork-card-body-clean h3 {
+    font-size: clamp(26px, 8vw, 36px) !important;
+  }
+
+  .artwork-lightbox {
+    padding: 18px !important;
+  }
+
+  .artwork-lightbox-inner {
+    width: 94vw !important;
+  }
+
+  .artwork-lightbox-inner img {
+    max-height: 76vh !important;
+    border-radius: 16px !important;
+  }
+
+  .artwork-lightbox-close {
+    top: 18px !important;
+    right: 18px !important;
+    width: 48px !important;
+    height: 48px !important;
+    font-size: 34px !important;
+  }
+}
+/* =========================================
+   ARTWORK CARD FINAL OVERRIDES
+   Smaller centered titles + seamless bottom fade
+========================================= */
+
+/* Make the card fade into the page background instead of white */
+.artwork-card-clean {
+  background: linear-gradient(
+    180deg,
+    #c7a09a 0%,
+    #ffe4a8 42%,
+    #fff7df 66%,
+    #f5f2e8 82%,
+    #ededeb 100%
+  ) !important;
+
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* Make the inner shadow fade before the bottom so no outline shows */
+.artwork-card-clean::before {
+  height: 84% !important;
+
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    #000 0%,
+    #000 54%,
+    rgba(0, 0, 0, 0.45) 72%,
+    transparent 100%
+  ) !important;
+
+  mask-image: linear-gradient(
+    180deg,
+    #000 0%,
+    #000 54%,
+    rgba(0, 0, 0, 0.45) 72%,
+    transparent 100%
+  ) !important;
+}
+
+/* Center the text block */
+.artwork-card-body-clean {
+  text-align: center !important;
+  padding: 20px 22px 30px !important;
+}
+
+/* Center the meta line */
+.artwork-card-meta {
+  text-align: center !important;
+  margin: 0 0 10px !important;
+  font-size: 11px !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0.09em !important;
+}
+
+/* Smaller artwork title */
+.artwork-card-body-clean h3 {
+  max-width: 92% !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+
+  font-size: clamp(22px, 1.8vw, 28px) !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.035em !important;
+  font-weight: 900 !important;
+}
+
+/* Keep long titles controlled */
+.artwork-card-wide .artwork-card-body-clean h3 {
+  max-width: 88% !important;
+}
+
+/* Give card a little bottom fade room */
+.artwork-card-body-clean {
+  padding-bottom: 38px !important;
+}
+
+/* Mobile title size */
+@media (max-width: 760px) {
+  .artwork-card-body-clean h3 {
+    font-size: clamp(22px, 7vw, 30px) !important;
+    max-width: 92% !important;
+  }
+
+  .artwork-card-meta {
+    font-size: 11px !important;
+  }
+}
+/* =========================================
+   2025 ARTWORK PAGE WIDTH FIX
+   Same card width, natural image height
+========================================= */
+
+/* Use a clean 2-column gallery for 2025 */
+.artwork-2025-page .artwork-flex-gallery {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  gap: 38px !important;
+  max-width: 1120px !important;
+  margin: 0 auto !important;
+}
+
+/* Force every 2025 card to the larger size */
+.artwork-2025-page .artwork-card-clean,
+.artwork-2025-page .artwork-card-portrait,
+.artwork-2025-page .artwork-card-wide {
+  width: 460px !important;
+}
+
+/* No forced image height */
+.artwork-2025-page .artwork-image-button-clean {
+  width: calc(100% - 48px) !important;
+  height: auto !important;
+  margin: 24px 24px 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  background: transparent !important;
+}
+
+/* Image keeps its real proportion */
+.artwork-2025-page .artwork-image-button-clean img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+
+  transform: scale(1) !important;
+  transform-origin: center center !important;
+  box-shadow: none !important;
+
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease !important;
+}
+
+/* Card stays still, only image pops */
+.artwork-2025-page .artwork-card-clean:hover .artwork-image-button-clean img,
+.artwork-2025-page .artwork-card-clean:focus-within .artwork-image-button-clean img {
+  transform: scale(1.035) !important;
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.18) !important;
+}
+
+/* Keep text clean and centered */
+.artwork-2025-page .artwork-card-body-clean {
+  text-align: center !important;
+  padding: 20px 22px 38px !important;
+}
+
+.artwork-2025-page .artwork-card-meta {
+  text-align: center !important;
+}
+
+.artwork-2025-page .artwork-card-body-clean h3 {
+  max-width: 92% !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+  font-size: clamp(22px, 1.8vw, 28px) !important;
+  line-height: 1.05 !important;
+}
+
+/* Tablet/mobile: stack if needed */
+@media (max-width: 980px) {
+  .artwork-2025-page .artwork-card-clean,
+  .artwork-2025-page .artwork-card-portrait,
+  .artwork-2025-page .artwork-card-wide {
+    width: min(100%, 460px) !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .artwork-2025-page .artwork-flex-gallery {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  .artwork-2025-page .artwork-card-clean,
+  .artwork-2025-page .artwork-card-portrait,
+  .artwork-2025-page .artwork-card-wide {
+    width: 100% !important;
+  }
+
+  .artwork-2025-page .artwork-image-button-clean {
+    width: calc(100% - 36px) !important;
+    margin: 18px 18px 0 !important;
+  }
+}
