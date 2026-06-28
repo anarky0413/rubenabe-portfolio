@@ -5117,3 +5117,797 @@ body.lightbox-open {
     margin: 18px 18px 0 !important;
   }
 }
+/* =========================================
+   CIRCUIT ENGINEERING AUDIT CASE PAGE
+========================================= */
+
+.circuit-page,
+.circuit-case {
+  background: #ededeb;
+}
+
+.circuit-case {
+  color: #222222;
+}
+
+/* Hero */
+
+.circuit-hero {
+  padding: 54px 0 46px;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(231, 225, 191, 0.46), transparent 30%),
+    radial-gradient(circle at 80% 22%, rgba(146, 57, 60, 0.12), transparent 30%),
+    #ededeb;
+}
+
+.circuit-hero-inner {
+  max-width: 980px;
+  text-align: center;
+}
+
+.circuit-hero h1 {
+  max-width: 980px;
+  margin: 0 auto 24px;
+  color: #2e2e32;
+  font-size: clamp(48px, 7vw, 88px);
+  line-height: 0.95;
+  font-weight: 900;
+  letter-spacing: -0.065em;
+}
+
+.circuit-hero .case-lead {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.circuit-hero .case-hero-actions {
+  justify-content: center;
+  margin-top: 34px;
+}
+
+/* Page rhythm */
+
+.circuit-case .case-section {
+  padding: 52px 0;
+}
+
+.circuit-case .case-section-last {
+  padding-bottom: 88px;
+}
+
+.circuit-case .case-kicker {
+  margin-bottom: 12px;
+}
+
+.circuit-case .section-heading {
+  max-width: 980px;
+  margin: 0 0 36px;
+  font-size: clamp(38px, 4.1vw, 58px);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+}
+
+.circuit-case .case-box {
+  padding: 44px 48px;
+}
+
+.circuit-case .case-box .case-section-title {
+  max-width: 980px;
+  margin: 0 0 32px;
+  font-size: clamp(38px, 4.1vw, 58px);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+}
+
+.circuit-case .overview-copy {
+  gap: 16px;
+}
+
+/* Scope cards */
+
+.circuit-scope-grid,
+.circuit-finding-grid,
+.circuit-comparison-grid,
+.circuit-learning-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.circuit-scope-grid,
+.circuit-finding-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.circuit-comparison-grid,
+.circuit-learning-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.circuit-info-card,
+.circuit-finding-card,
+.circuit-comparison-grid article,
+.circuit-learning-grid article {
+  background: #ffffff;
+  border: 1px solid rgba(80, 61, 13, 0.16);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.06);
+}
+
+.circuit-info-card span,
+.circuit-finding-card span {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--brown);
+  font-size: 38px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -0.055em;
+}
+
+.circuit-info-card h3,
+.circuit-finding-card h3,
+.circuit-comparison-grid h3,
+.circuit-learning-grid h3 {
+  margin: 0 0 14px;
+  color: #2e2e32;
+  font-size: clamp(28px, 2.4vw, 34px);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.circuit-info-card p,
+.circuit-finding-card p,
+.circuit-comparison-grid p,
+.circuit-learning-grid p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* Benchmark */
+
+.circuit-benchmark-layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 54px;
+  align-items: start;
+}
+
+.circuit-benchmark-copy {
+  display: grid;
+  gap: 18px;
+}
+
+.circuit-benchmark-copy p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.circuit-comparison-grid {
+  margin-top: 34px;
+}
+
+.circuit-comparison-grid article {
+  background: linear-gradient(180deg, #f7efcf 0%, #ffffff 100%);
+}
+
+.circuit-comparison-grid .mini-label {
+  margin-bottom: 12px !important;
+}
+
+/* Recommendations */
+
+.circuit-centered-title {
+  max-width: 940px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+
+.circuit-recommendation-list {
+  max-width: 960px;
+  margin: 36px auto 0;
+  display: grid;
+  gap: 18px;
+}
+
+.circuit-recommendation-list article {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 20px;
+  align-items: start;
+  padding: 24px 26px;
+  background: #ffffff;
+  border: 1px solid rgba(80, 61, 13, 0.16);
+  border-radius: 18px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.05);
+}
+
+.circuit-recommendation-list span {
+  color: var(--brown);
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -0.055em;
+}
+
+.circuit-recommendation-list h3 {
+  margin: 0 0 10px;
+  color: #2e2e32;
+  font-size: clamp(26px, 2.2vw, 32px);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.circuit-recommendation-list p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+/* Reflection */
+
+.circuit-case .reflection-block {
+  text-align: center;
+}
+
+.circuit-case .reflection-block h2 {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+.circuit-case .reflection-block p {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circuit-case .reflection-block p + p {
+  margin-top: 16px;
+}
+
+/* Responsive */
+
+@media (max-width: 1080px) {
+  .circuit-scope-grid,
+  .circuit-finding-grid,
+  .circuit-comparison-grid,
+  .circuit-learning-grid,
+  .circuit-benchmark-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .circuit-case .case-box {
+    padding: 34px 30px;
+  }
+}
+
+@media (max-width: 760px) {
+  .circuit-hero {
+    padding: 38px 0 38px;
+  }
+
+  .circuit-hero h1 {
+    font-size: clamp(42px, 13vw, 64px);
+  }
+
+  .circuit-hero .case-lead {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .circuit-case .case-section {
+    padding: 38px 0;
+  }
+
+  .circuit-case .case-box {
+    padding: 26px 20px;
+  }
+
+  .circuit-case .section-heading,
+  .circuit-case .case-box .case-section-title {
+    font-size: clamp(36px, 11vw, 52px);
+    margin-bottom: 26px;
+  }
+
+  .circuit-info-card,
+  .circuit-finding-card,
+  .circuit-comparison-grid article,
+  .circuit-learning-grid article {
+    padding: 24px 22px;
+  }
+
+  .circuit-recommendation-list article {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 22px;
+  }
+}
+/* =========================================
+   CIRCUIT PAGE FINAL TYPE TUNING
+   Reduces chunky headings and improves scan
+========================================= */
+
+/* Main section headings: closer to H3 / large H3 */
+.circuit-case .section-heading,
+.circuit-case .case-box .case-section-title,
+.circuit-case .reflection-block h2 {
+  font-size: clamp(30px, 3.1vw, 44px) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.035em !important;
+  max-width: 820px !important;
+}
+
+/* Centered recommendation heading */
+.circuit-case .circuit-centered-title {
+  font-size: clamp(30px, 3.1vw, 44px) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.035em !important;
+  max-width: 820px !important;
+}
+
+/* Hero can stay big, but slightly less aggressive */
+.circuit-hero h1 {
+  font-size: clamp(46px, 6.2vw, 78px) !important;
+  line-height: 0.96 !important;
+}
+
+/* Card headings smaller */
+.circuit-info-card h3,
+.circuit-finding-card h3,
+.circuit-comparison-grid h3,
+.circuit-learning-grid h3,
+.circuit-recommendation-list h3 {
+  font-size: clamp(22px, 2vw, 28px) !important;
+  line-height: 1.14 !important;
+  letter-spacing: -0.03em !important;
+}
+
+/* Body text slightly tighter */
+.circuit-info-card p,
+.circuit-finding-card p,
+.circuit-comparison-grid p,
+.circuit-learning-grid p,
+.circuit-recommendation-list p,
+.circuit-benchmark-copy p,
+.circuit-case .overview-copy p,
+.circuit-case .reflection-block p {
+  font-size: 17px !important;
+  line-height: 1.62 !important;
+}
+
+/* Number labels smaller so cards feel less loud */
+.circuit-info-card span,
+.circuit-finding-card span {
+  font-size: 30px !important;
+  margin-bottom: 14px !important;
+}
+
+.circuit-recommendation-list span {
+  font-size: 28px !important;
+}
+
+/* Cards slightly more compact */
+.circuit-info-card,
+.circuit-finding-card,
+.circuit-comparison-grid article,
+.circuit-learning-grid article {
+  padding: 24px !important;
+}
+
+.circuit-recommendation-list article {
+  padding: 20px 22px !important;
+}
+
+/* Slightly tighter vertical rhythm */
+.circuit-case .case-section {
+  padding: 44px 0 !important;
+}
+
+.circuit-case .case-box {
+  padding: 38px 42px !important;
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+  .circuit-case .section-heading,
+  .circuit-case .case-box .case-section-title,
+  .circuit-case .reflection-block h2,
+  .circuit-case .circuit-centered-title {
+    font-size: clamp(30px, 9vw, 42px) !important;
+  }
+
+  .circuit-hero h1 {
+    font-size: clamp(40px, 12vw, 58px) !important;
+  }
+
+  .circuit-case .case-box {
+    padding: 24px 20px !important;
+  }
+}
+/* =========================================
+   GLOBAL LINK HR WEBSITE CASE PAGE
+========================================= */
+
+.global-page,
+.global-case {
+  background: #ededeb;
+}
+
+.global-case {
+  color: #222222;
+}
+
+/* Hero */
+
+.global-hero {
+  padding: 54px 0 46px;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(231, 225, 191, 0.46), transparent 30%),
+    radial-gradient(circle at 80% 22%, rgba(0, 47, 108, 0.12), transparent 30%),
+    #ededeb;
+}
+
+.global-hero-inner {
+  max-width: 980px;
+  text-align: center;
+}
+
+.global-hero h1 {
+  max-width: 980px;
+  margin: 0 auto 24px;
+  color: #2e2e32;
+  font-size: clamp(46px, 6.2vw, 78px);
+  line-height: 0.96;
+  font-weight: 900;
+  letter-spacing: -0.065em;
+}
+
+.global-hero .case-lead {
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.global-hero .case-hero-actions {
+  justify-content: center;
+  margin-top: 34px;
+}
+
+/* Page rhythm */
+
+.global-case .case-section {
+  padding: 44px 0;
+}
+
+.global-case .case-section-last {
+  padding-bottom: 88px;
+}
+
+.global-case .case-kicker {
+  margin-bottom: 12px;
+}
+
+.global-case .section-heading,
+.global-case .case-box .case-section-title,
+.global-case .reflection-block h2,
+.global-case .global-centered-title {
+  max-width: 820px;
+  font-size: clamp(30px, 3.1vw, 44px);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.global-case .case-box {
+  padding: 38px 42px;
+}
+
+.global-case .overview-copy {
+  gap: 16px;
+}
+
+.global-case .overview-copy p,
+.global-case .reflection-block p {
+  font-size: 17px;
+  line-height: 1.62;
+}
+
+/* Identity section */
+
+.global-identity-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 46px;
+  align-items: start;
+}
+
+.global-identity-layout p {
+  max-width: 680px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.62;
+}
+
+.global-palette-card {
+  display: grid;
+  gap: 16px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 47, 108, 0.14);
+  border-radius: 18px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.06);
+}
+
+.global-color-row {
+  display: grid;
+  grid-template-columns: 62px 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.global-color-row span {
+  display: block;
+  width: 62px;
+  height: 62px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 47, 108, 0.16);
+}
+
+.global-color-row h3 {
+  margin: 0 0 4px;
+  color: #2e2e32;
+  font-size: 22px;
+  line-height: 1.1;
+  font-weight: 850;
+  letter-spacing: -0.03em;
+}
+
+.global-color-row p {
+  margin: 0;
+  color: rgba(51, 51, 51, 0.72);
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* Cards */
+
+.global-process-grid,
+.global-work-grid,
+.global-system-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.global-process-grid,
+.global-work-grid,
+.global-system-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.global-system-grid {
+  margin-top: 34px;
+}
+
+.global-info-card,
+.global-work-card,
+.global-system-grid article {
+  background: #ffffff;
+  border: 1px solid rgba(80, 61, 13, 0.16);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.06);
+}
+
+.global-info-card span,
+.global-work-card span {
+  display: block;
+  margin-bottom: 14px;
+  color: #002F6C;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -0.055em;
+}
+
+.global-info-card h3,
+.global-work-card h3,
+.global-system-grid h3 {
+  margin: 0 0 14px;
+  color: #2e2e32;
+  font-size: clamp(22px, 2vw, 28px);
+  line-height: 1.14;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.global-info-card p,
+.global-work-card p,
+.global-system-grid p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.62;
+  font-weight: 400;
+}
+
+/* Feature layout */
+
+.global-feature-layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 54px;
+  align-items: start;
+}
+
+.global-feature-copy {
+  display: grid;
+  gap: 18px;
+}
+
+.global-feature-copy p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.62;
+}
+
+.global-system-grid article {
+  background: linear-gradient(180deg, #f7efcf 0%, #ffffff 100%);
+}
+
+.global-system-grid .mini-label {
+  margin-bottom: 12px !important;
+}
+
+/* Learning list */
+
+.global-centered-title {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+
+.global-learning-list {
+  max-width: 960px;
+  margin: 36px auto 0;
+  display: grid;
+  gap: 18px;
+}
+
+.global-learning-list article {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 20px;
+  align-items: start;
+  padding: 20px 22px;
+  background: #ffffff;
+  border: 1px solid rgba(80, 61, 13, 0.16);
+  border-radius: 18px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.05);
+}
+
+.global-learning-list span {
+  color: #002F6C;
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -0.055em;
+}
+
+.global-learning-list h3 {
+  margin: 0 0 10px;
+  color: #2e2e32;
+  font-size: clamp(22px, 2vw, 28px);
+  line-height: 1.14;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.global-learning-list p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.62;
+}
+
+/* Reflection */
+
+.global-case .reflection-block {
+  text-align: center;
+}
+
+.global-case .reflection-block h2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+.global-case .reflection-block p {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.global-case .reflection-block p + p {
+  margin-top: 16px;
+}
+
+/* Responsive */
+
+@media (max-width: 1080px) {
+  .global-process-grid,
+  .global-work-grid,
+  .global-system-grid,
+  .global-feature-layout,
+  .global-identity-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .global-case .case-box {
+    padding: 34px 30px;
+  }
+}
+
+@media (max-width: 760px) {
+  .global-hero {
+    padding: 38px 0 38px;
+  }
+
+  .global-hero h1 {
+    font-size: clamp(40px, 12vw, 58px);
+  }
+
+  .global-hero .case-lead {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .global-case .case-section {
+    padding: 38px 0;
+  }
+
+  .global-case .case-box {
+    padding: 24px 20px;
+  }
+
+  .global-case .section-heading,
+  .global-case .case-box .case-section-title,
+  .global-case .reflection-block h2,
+  .global-case .global-centered-title {
+    font-size: clamp(30px, 9vw, 42px);
+  }
+
+  .global-info-card,
+  .global-work-card,
+  .global-system-grid article,
+  .global-palette-card {
+    padding: 24px 22px;
+  }
+
+  .global-learning-list article {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 22px;
+  }
+
+  .global-color-row {
+    grid-template-columns: 48px 1fr;
+  }
+
+  .global-color-row span {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+  }
+}
