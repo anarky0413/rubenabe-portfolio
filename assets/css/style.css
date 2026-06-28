@@ -6327,3 +6327,99 @@ body.lightbox-open {
     width: 100%;
   }
 }
+/* =========================================
+   ARTWORK IMAGE PROTECTION
+   Makes casual saving, dragging, and print/PDF capture harder
+========================================= */
+
+.artwork-page img,
+.artwork-page .artwork-image-button-clean,
+.artwork-page .artwork-lightbox-inner img {
+  -webkit-user-select: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  user-drag: none !important;
+  -webkit-touch-callout: none !important;
+}
+
+.artwork-page .artwork-image-button-clean img,
+.artwork-page .artwork-lightbox-inner img {
+  pointer-events: none !important;
+}
+
+/* Rights note */
+
+.artwork-rights-note {
+  max-width: 760px !important;
+  margin: 18px auto 0 !important;
+  color: rgba(80, 61, 13, 0.82) !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  font-weight: 800 !important;
+  text-align: center !important;
+}
+
+/* Print warning is hidden on screen */
+
+.artwork-print-warning {
+  display: none;
+}
+
+/* =========================================
+   STRONG PRINT / SAVE AS PDF PROTECTION
+   When someone prints or saves as PDF,
+   hide the artwork page and show only a warning.
+========================================= */
+
+@media print {
+  @page {
+    margin: 0.75in;
+  }
+
+  body.artwork-page {
+    background: #ffffff !important;
+  }
+
+  body.artwork-page * {
+    visibility: hidden !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body.artwork-page .artwork-print-warning,
+  body.artwork-page .artwork-print-warning * {
+    visibility: visible !important;
+  }
+
+  body.artwork-page .artwork-print-warning {
+    display: block !important;
+    position: fixed !important;
+    top: 35% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 80% !important;
+    max-width: 680px !important;
+    padding: 34px !important;
+    color: #222222 !important;
+    font-family: Inter, Arial, sans-serif !important;
+    text-align: center !important;
+    border: 2px solid #503D0D !important;
+    border-radius: 18px !important;
+    background: #ffffff !important;
+  }
+
+  body.artwork-page .artwork-print-warning h1 {
+    margin: 0 0 16px !important;
+    color: #2e2e32 !important;
+    font-size: 32px !important;
+    line-height: 1.1 !important;
+    font-weight: 900 !important;
+  }
+
+  body.artwork-page .artwork-print-warning p {
+    margin: 0 !important;
+    color: #333333 !important;
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+  }
+}
